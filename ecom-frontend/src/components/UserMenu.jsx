@@ -43,7 +43,7 @@ const UserMenu = () => {
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
-                MenuListProps={{
+                slotProps={{
                     'aria-labelledby': 'basic-button',
                     sx: { width: 160 },
                 }}
