@@ -54,7 +54,7 @@ public class AuthController {
 
 
     @GetMapping("/user")
-    public ResponseEntity<?> getUserDetails(Authentication authentication){
+    public ResponseEntity<?> getUserDetails(Authentication authentication) {
         return ResponseEntity.ok().body(authService.getCurrentUserDetails(authentication));
     }
 

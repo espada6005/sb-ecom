@@ -1,7 +1,7 @@
 package com.ecommerce.project.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
+// import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +21,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderId;
 
-    @Email
+    // @Email
     @Column(nullable = false)
     private String email;
 
